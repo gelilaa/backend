@@ -10,7 +10,10 @@ module.exports = ({ env }) => ({
         env("DATABASE_FILENAME", ".tmp/data.db")
       ),
       ssl: {
-        rejectUnauthorized: false,
+        rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false),
+      },
+      options: {
+        ssl: env.bool("DATABASE_SSL", false),
       },
     },
     useNullAsDefault: true,
