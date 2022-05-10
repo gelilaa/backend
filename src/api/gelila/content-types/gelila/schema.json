@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gelilas",
+  "info": {
+    "singularName": "gelila",
+    "pluralName": "gelilas",
+    "displayName": "Gelila"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "decimal"
+    }
+  }
+}
